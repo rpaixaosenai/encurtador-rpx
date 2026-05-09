@@ -3,12 +3,12 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAie35WVAuc2M62kmCCvFbZX7wfuCOwFBI",
-  authDomain: "rpx-link.firebaseapp.com",
-  projectId: "rpx-link",
-  storageBucket: "rpx-link.firebasestorage.app",
-  messagingSenderId: "758809764232",
-  appId: "1:758809764232:web:89e9013820a3d3c2b89a3d"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 console.log("🔥 Firebase Config loaded for project:", firebaseConfig.projectId);
